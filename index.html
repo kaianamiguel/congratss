@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>Feliz Aniversário</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img id="logo" src="./imagens/logo.png" alt="Logo da página">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#mensagem">Mensagem</a></li>
+                <li class="nav-item"><a href="#comemorar">Vamos comemorar?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="espaco"></div>
+        <canvas id="celebrate"></canvas>
+        <section id="parabens">
+            <img class="parabens" src="./imagens/parabens1.jpg" alt="Imagem de parabens">
+        </section>
+        
+        <section id="mensagem">
+            <div class="espaco"></div>
+            <div class="mensagem">
+                <h2 class="titulo-texto">Feliz Aniversário!!!</h2>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur omnis, eos eius enim numquam sequi, repellendus quasi nulla consequatur totam sunt! Illum dolor corrupti nam consequuntur est debitis, qui tempora.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti nisi quasi animi autem ut iste officia maxime! Repellat laboriosam, nesciunt illo soluta reprehenderit blanditiis doloribus rerum dolorum, tempora ad esse.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="comemorar">
+            <div class="espaco"></div>
+            <h2 class="titulo-comemorar">Onde vamos comemorar?! Escolhe um cartãozinho</h2>
+            <div class="caixa-comemorar">
+                <div class="comemorar">
+                    <div class="card">
+                        <div class="front">
+                            <img class="icone-front" src="./imagens/baloes.png" alt="Icone de comemorar">
+                        </div>
+                        <div class="back">
+                            <img class="icone tacos" src="./imagens/tacos.png" alt="Icone de tacos">
+                            <p class="title-card">Loca Madre</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="front">
+                            <img class="icone-front" src="./imagens/baloes.png" alt="Icone de comemorar">
+                        </div>
+                        <div class="back">
+                            <img class="icone alho" src="./imagens/alho.png" alt="Icone de pao de alho">
+                            <p class="title-card">Santo Alho</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="front">
+                            <img class="icone-front" src="./imagens/baloes.png" alt="Icone de comemorar">
+                        </div>
+                        <div class="back">
+                            <img class="icone tacos" src="./imagens/pao.png" alt="Icone de tacos">
+                            <p class="title-card">Pão do Pá</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="espaco"></div>        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

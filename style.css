@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+canvas {
+    position: absolute;
+}
+
+.espaco {
+    height: 120px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    padding: 0px 5vw;
+    background-color: rgb(240, 62, 82);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-item {
+    display: flex;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;   
+}
+
+a {  
+    text-decoration: none; 
+    color: white;
+}
+
+#logo {
+    width: 100px;
+    padding-top: 30px;
+}
+
+
+/* Parabens */
+
+#parabens {
+    
+}
+
+.parabens {
+    display: block;
+    width: 100%;
+    margin: 0 auto 0;
+}
+
+
+/* Mensagem */
+
+.menssagem {
+    
+}
+
+.titulo-texto {
+    font-size: 2rem;
+    text-align: center;
+    padding: 5vh 15vw;
+}
+
+.texto {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0 10vw;
+}
+
+
+
+
+
+/* comemorar */
+
+.titulo-comemorar {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5vh 15vw;
+}
+
+.caixa-comemorar {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.comemorar {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    width: 100vw;
+    height: 350px;
+    background: none;
+    padding: 5vh 5vw;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+.card  {
+    position: relative;
+    width:270px;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(240, 62, 82);
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(236, 114, 92);
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+    font-size: 1rem;
+    border-radius: 15px;
+}
+
+.flipCard {
+    transform: rotateY(180deg);
+}
+
+.icone{
+    width: 120px;
+    padding-top: 20%;
+}
+
+.icone-front {
+    width: 120px;
+    padding-top: 30%;
+}
+
+.title-card {
+    font-size: 1.2rem
+} 
+
+@media(max-width: 480px) {
+    .espaco {
+        height: 70px;
+    }
+    
+    .navbar {
+        width: 100vw;
+        padding: 0px 5vw;
+        background-color: rgb(240, 62, 82);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav-item {
+        display: flex;
+        color: white;
+        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.7rem;   
+    }
+
+    #logo {
+        width: 60px;
+        padding-top: 15px;
+    }
+
+    .comemorar {
+        height: 40vh;
+    }
+
+    .card  {
+        position: relative;
+        width:270px;
+        height: 60%;
+        transform-style: preserve-3d;
+        transition: all 0.8s ease;
+        
+    }
+
+    .icone{
+        width: 60px;
+        padding-top: 25%;
+    }
+
+    .icone-front {
+        width: 60px;
+        padding-top: 40%;
+    }
+
+    .title-card {
+        font-size: 0.7rem
+    } 
+}
