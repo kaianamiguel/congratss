@@ -14,7 +14,7 @@ canvas {
 }
 
 .espaco {
-    height: 75px;
+    height: 120px;
 }
 
 
@@ -37,7 +37,7 @@ canvas {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .nav-item {
@@ -45,7 +45,7 @@ canvas {
     color: white;
     font-family: 'Outfit', sans-serif;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem;   
+    font-size: 1rem;   
 }
 
 a {  
@@ -54,12 +54,16 @@ a {
 }
 
 #logo {
-    width: 70px;
-    padding-top: 10px;
+    width: 100px;
+    padding-top: 30px;
 }
 
 
 /* Parabens */
+
+#parabens {
+    
+}
 
 .parabens {
     display: block;
@@ -70,7 +74,11 @@ a {
 
 /* Mensagem */
 
-.titulo {
+.menssagem {
+    
+}
+
+.titulo-texto {
     font-size: 2rem;
     text-align: center;
     padding: 5vh 15vw;
@@ -82,7 +90,17 @@ a {
     padding: 0 10vw;
 }
 
+
+
+
+
 /* comemorar */
+
+.titulo-comemorar {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5vh 15vw;
+}
 
 .caixa-comemorar {
     display: flex;
@@ -94,8 +112,8 @@ a {
     display: flex;
     flex-direction: row;
     gap: 5vw;
-    width: 90vw;
-    height: 30vw;
+    width: 100vw;
+    height: 350px;
     background: none;
     padding: 5vh 5vw;
     justify-content: center;
@@ -105,7 +123,7 @@ a {
 
 .card  {
     position: relative;
-    width:250px;
+    width:270px;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.8s ease;
@@ -122,10 +140,6 @@ a {
     text-align: center;
     font-size: 1rem;
     border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .back {
@@ -139,10 +153,6 @@ a {
     transform: rotateY(180deg);
     font-size: 1rem;
     border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .flipCard {
@@ -150,108 +160,82 @@ a {
 }
 
 .icone{
-    width: 40%;
+    width: 120px;
+    padding-top: 20%;
 }
 
 .icone-front {
-    width: 50%;
+    width: 120px;
+    padding-top: 30%;
 }
 
 .title-card {
-    font-size: 1rem
-}
+    font-size: 1.2rem
+} 
 
-footer {
-    background-color: #FF9C3C;
-    color: #fff;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .copyrigth {
-    font-size: 0.8rem;
-  }
-  
-
-
-@media(max-width: 768px) {
-
-    .titulo {
-        font-size: 1.5rem;
-    }
-
-    .texto {
-        font-size: 0.8rem;
+@media(max-width: 480px) {
+    .espaco {
+        height: 70px;
     }
     
-    .espaco {
-        height: 55px;
+    .navbar {
+        width: 100vw;
+        padding: 0px 5vw;
+        background-color: rgb(240, 62, 82);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
     }
 
     .nav-item {
-        font-size: 0.6rem;   
+        display: flex;
+        color: white;
+        font-family: 'Outfit', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.7rem;   
     }
 
     #logo {
-        width: 50px;
-        padding-top: 10px;
+        width: 60px;
+        padding-top: 15px;
     }
 
     .comemorar {
-        height: 40vw;
-        gap: 3vw;
+        height: 40vh;
     }
 
-    .card {
-        width: 180px;
+    .card  {
+        position: relative;
+        width:270px;
+        height: 60%;
+        transform-style: preserve-3d;
+        transition: all 0.8s ease;
+        
+    }
+
+    .icone{
+        width: 60px;
+        padding-top: 25%;
+    }
+
+    .icone-front {
+        width: 60px;
+        padding-top: 40%;
     }
 
     .title-card {
         font-size: 0.7rem
     } 
-
-    .copyrigth {
-        font-size: 0.6rem;
-    }
-}
-
-@media(max-width:320px) {
-    
-    .nav-item {
-        font-size: 0.5rem;   
-    }
-
-    #logo {
-        width: 40px;
-        padding-top: 5px;
-    }
-    
-    .titulo {
-        font-size: 1rem;
-    }
-
-    .texto {
-        font-size: 0.6rem;
-    }
-
-    .espaco {
-        height: 40px;
-    }
-
-    .comemorar {
-        height: 50vw;
-        gap: 2vw;
-    }
-
-    .card {
-        width: 130px;
-    }
-
-    .title-card {
-        font-size: 0.5rem
-    } 
-
-    .copyrigth {
-        font-size: 0.5rem;
-    }
 }
